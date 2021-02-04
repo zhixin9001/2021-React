@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
-import { addTodo } from '../actions';
+import { addTodo } from '../actions.js';
 import { connect } from 'react-redux';
 
 class AddTodo extends Component {
@@ -22,7 +22,7 @@ class AddTodo extends Component {
       return;
     }
 
-    this.props.onAdd(input.value);
+    this.props.onAdd(input);
     this.setState({ value: '' });
   }
 

@@ -11,5 +11,4 @@ const view =()=>(
     </ul>
   </div>
 );
-
 export {view};
